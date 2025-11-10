@@ -1,0 +1,8 @@
+Algorithm that Requir scaling
+-Distance-based Algorithms
+    k-NN,SVM,K-Means clustering
+-Gradient-Based models
+    Linear regression,Logistic regression,and neural networks
+Algorithms Less Sensitive to scaling
+-Tree-Based models
+    Decision Trees,Random Forests,Gradient Boosting
