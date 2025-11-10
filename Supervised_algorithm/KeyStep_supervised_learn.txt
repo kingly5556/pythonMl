@@ -1,0 +1,21 @@
+1.model selection 
+-choose appropriate model based in the problem
+2.model evaluation
+-use performance metrics like MSE for regression or accuracy,precision,recall and f1 score for classification
+3.comparision
+-compare multiple models to identify the best-performing one
+
+Dataset Options 
+1.regression Example 
+-predict house prices using features like square footage,number of rooms,and location
+-dataset likes California Housing 
+
+2.classification Example
+-classify Customer churn based on Customer demographic and behavior
+-dataset likes Telco Customer Churn Dataset
+
+Evaluating and comparing model performance
+Steps
+-evaluate models using cross-validation
+-generate performance metrics
+-summarize findings to identify strengths and weaknesses of each model

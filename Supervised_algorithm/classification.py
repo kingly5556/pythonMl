@@ -38,3 +38,21 @@ print("Prec:",precision_score(y_test,y_pred))
 print("Rec:",recall_score(y_test,y_pred))
 print("F1:",f1_score(y_test,y_pred))
 print("\nClassification Report\n:",classification_report(y_test,y_pred))
+
+import matplotlib.pyplot as plt
+
+#Plot dicision boundary
+x_min,x_max = x[:,0].min()-1,x[:,0].max()+1
+y_min,y_max = x[:,1].min()-1,x[:,1].max()+1
+xx,yy = np.meshgrid(np.arange(x_min,x_max,0.1),np.arange(y_min,y_max,0.1))
+
+#Predict propabilities for grid points
+z = model.predict(np.c_[xx.ravel(),yy.ravel()])
+z = z.reshape(xx.shape)
+
+plt.contourf(xx,yy,z,alpha=0.8,cmap="coolwarm")
+plt.scatter(x_test['Age'],x_test['Salary'],c=y_test,edgecolors="k",cmap="coolwarm")
+plt.title("logistic regression decision Boundary")
+plt.xlabel("age")
+plt.ylabel("Salary")
+plt.show()
