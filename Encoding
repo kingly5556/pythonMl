@@ -1,0 +1,13 @@
+One-hot,Label Encoding
+-What are categorical variables?
+    binary categorical features Like Gender(Male/female)
+    Multi-class Categorical Features:Country(USA,Canada,UK).
+-One-Hot Encoding
+    Creates binary columns for each category in a categorical feature
+    Each row is marked with a 1 for its respective category and 0 elsewhere
+    Example:Feature color = [red,green,blue]
+
+-Label Encoding 
+    lavel Encoding assigns a unique integer to each category
+    Example:red = 0,blue = 1,green = 2.
+    
