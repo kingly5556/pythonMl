@@ -1,0 +1,22 @@
+What is feature creation?
+    feature creation involves deriving new,meaningful features from existing ones to enhance a 
+    model's ability to capture important patterns in the data
+Exams of feature creation  
+    Date-time feature,interaction feature,aggregations
+Importance 
+    Adds domain knowledge to the dataset    
+    Captures hidden patterns and trends not evident in the original features
+
+What is feature transforamtion?
+    Feature transformation modifies existing features to better suit the learning algorithm
+Common transforamtion
+    Logarithmic transformation
+        Reduces skewness in highly skewed distributions
+    Square root transformation
+        Moderately Reduces skewness,often used for count data
+    Polynomial transformation   
+        Add  higher-order terms(x^2,x^3)to capture non-linear relationships
+Importance  
+    Enhances the model's ability to fit non-linear relationships
+    Makes distributions more nomal-like,aiding algorithms that assume normality
+    

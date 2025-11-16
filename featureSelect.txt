@@ -1,0 +1,27 @@
+What is Feature selection?
+    Process of identifying and retaining the most relevant features(input variables)in a dataset while discarding irrelevant or redundant ones
+
+Why is feature selection important?
+    Improves model performance
+    Reduces Overfitting
+    Enhances interpretability
+    Increases Computational Efficiency
+
+When to use feature selection?
+    High-Dimentional dataset    
+    Correlated features
+    Reducing complexity
+
+Techniques 
+-Filter Methods
+    Evaluate the relevance of features by analyzing their statistical properties in relation to the target variable
+    Exam:Correlation | Mutual Information
+    When to Use:Quick evaluation of features before training a model
+-Wrapper Methods
+    Iteratively selects features by training and evaluating a model
+    Exam:Forward selection | Backward Elimination
+    When to use:USeful when deature interactions are important but computationally expensive
+-Embedded Methods  
+    Perform feature selection as part of the model training Process 
+    Exam: Lasso Regression | Tree-based Models
+    When to ude:Effective when traing tree-based model or regularized Regression
