@@ -1,0 +1,29 @@
+What is LightGBM
+-Implementation of gratient Boosting designed to handle large datasets and high-dimensional data with speed and accuracy
+-Key features of LightBGM:
+    Histogram-Based splitting
+    Leadf-Wise Tree Growth
+    Support for GPU training
+    Handling Sparse Data
+-Advantages 
+    Faster training than XGBoost
+    Handles large datasets effectively
+    Reduces memory usage with histogram-based splitting 
+-When to use LightGBM
+    Large datasets with numerical features
+    Time-sensitive tasks requiring fast training
+    
+Overview of CatBoost
+-What is Catboost?
+    Gradient Boosting libraly developed specifically to handle categorical features with out the need for preprocessing like one-hot encoding 
+    Key Features of Catboost:
+        Native Support for Categorrical Data
+        Ordered Boosting 
+        Robust to Overfitting
+    Advantages
+        Eliminates the need for manual encoding of categorical data
+        Reduces overfitting with robust boosting techniques
+        Easy to implement for datasets with many cateforical features
+    When to use catBoost
+        Datasets with a high proportion of categorical features
+        Applications where overfitting is a concern

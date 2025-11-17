@@ -1,0 +1,33 @@
+What is cross validation?
+    Technique used to assess how well a machine learning model generalizes to an independent dataset
+Types of Cross-validation   
+-K-Fold cross-validation
+    Splits the dataset into K folds of approximately equal size
+    The model is trained on K-1 folds and validated on the remaining fold
+    This process is repeated K times,and the everage performance is computed
+-Stratified K-Fold
+    Ensures that each fold maintains the same class distribution as the original dataset
+    Useful for imbalanced datasets
+-Leave-One-Out Cross-Validation(LOOCV)
+    Uses a single data point for validation and the rest for training
+    Repeats this process for all data points
+    Computationally expensive but provides the most robust evaluation
+
+Hyperparameter tuning
+What is hyperparameter tuning?
+    Hyperparameters are parameters that are not learned by the model but are set before training,tuning these hyperparameters is crucial for optimizing model performance
+Techniques for Hyperparameter Tuning
+-Grid search
+    Exhaustively searches over a predefined hyperparameter space
+    Example:Testing all combinations of values for max_depth and learning_rate
+-Random search
+    Randomly samples combinations of hyperparameters from the predefined space
+    More efficient than grid search when the parameter space is large
+-Importance of hyperparameter Tuning
+    Prevents overfitting and underfitting by selecting the best configuration
+    Enhances model performance by optimizing critical setting
+
+Importance of Tuning hyperparameters for model performance
+    Without tuning,the model might not reach its optimal performance,leading to:
+        Underfitting:Model fails to capture the underlying patterns.
+        Overfitting:Model memorizes the training data and perform poorly on unseen data

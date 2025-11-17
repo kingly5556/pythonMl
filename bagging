@@ -1,0 +1,29 @@
+What is bagging?
+    Ensemble learning technique that trains multiple models on different subsets of the data,created by random smapling with replacement
+    Regression:Average the predictions of individual models
+    Classification:Use mahjority voting to determine the final class
+
+What is a random forest?
+    Ensemble learning method that builds multiple decision trees using bagging
+    Key features of Random forests
+        Bootstrap Sampling
+        Feature Randomness
+        Prediction Aggregation
+    Advantages
+        Handle both regression and classification tasks effectively
+        Works well with high-dimentional data
+        Reduces overfitting compared to single decision trees
+
+Ket parameters in random forests
+    Number of Trees(n_estimators)
+        The number of decision trees in the forest
+        Larger values reduce variance but increase computational cost
+    Maximum Depth(max_depth)
+        Limits the depth of each tree to prevent overfitting
+        Shallower trees generalize better but may underfit
+    Feature Selection(max_features)
+        Number of features to consider when looking for the best split
+        Options:sqrt|log2|None
+    Minimum Samples per Leaf(min_samples_leaf)
+        Minimum number of samples required in a leaf node
+        Prevents overly complex trees by ensuring each leaf contains enought sample

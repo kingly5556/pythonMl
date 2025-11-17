@@ -1,0 +1,41 @@
+What is XGBoost?
+    Advanced implementation of the gradient Boosting algorithm designed for speed and performance
+    It introduces various enhancements that make it faster more efficient and capable of handling omplex datasets
+Improvement over traditional gradient boosting
+    Speed
+    Handling missing data 
+    Regularization
+    Custom Loss functions
+    Tree pushing
+Key feature of XGBoost
+    Handling missing Data
+        Automatically assigns missing values to the branch that minimizes the loss function
+        Reduces preprocessing stpes for datasets with missing values
+    Regularization
+        Includes penalties for overly complex models,reducing overfitting
+        Hyperparameters
+            Lambda:L2 regularization term
+            Alpha:L1 regularization term
+    Parallel Processing 
+        Sprits calculations for tree construction across multiple cores,significantly improving training time
+
+Hyperparameters in XGBoost and how to tune them
+-Key Hyperparameters
+    Learning rate(eta)
+        Controls the contribution of each tree to the model
+        Typical range:0.01-0.3
+    Number of trees(n_estimators)
+        Determines the number of boosting rounds
+        Larger values may improve performance but increase computration time
+    Tree depth(max_depth)
+        Limits the depth of trees,balancing bias and variance
+        shallower trees gereralize better,while deeper trees may overfit
+    Subsample
+        Fraction of data used to train each tree
+        Help reduce overfitting:typical range:0.5-1.0
+    Colsample_bytree
+        fraction of features used for each tree split
+        Typical range:0.5-1
+        Regularization parameters:lamda and alpha control L2 and L1 regularization,respectively
+    
+        

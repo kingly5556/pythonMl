@@ -1,0 +1,35 @@
+What is Boosting
+    Ensemble technique that sequentially combines weak learners to form strong learner
+    Each subsequent model focuses on correcting the errors made by previous models
+How does Boosting different from bagging?
+    Approach
+        Bagging:Trains models independently on bootstapped subsets.
+        Boosting:Trains models sequentially to correct errors.
+    Purpose
+        Bagging:Reduces variance by averaging predictions.
+        Boosting:Reduces bias by focusing on difficult cases.
+    Exam
+        Bagging:Random Forest.
+        Boosting:Gradient Boosting,Ada Boosting.
+
+Gradient Boosting
+-What is Gradient boosting?
+    Boosting algorithm that builds models sequentially minimizing a loss function using gradient descent
+    Iteratively adds weak learners to improve overall model performance
+-How gradient boosting works
+    Initialize Model:Start with a simple model,often predicting the mean of the target variable
+    Compute Residuals:Calculate the difference between the actual and predicted values
+    Fit Weak learner:train a weak model to predict the residuals
+    Update Prediction:Add the predictions of the weak learner to the overall model
+    Repeat:Continue adding weak learners until the desired number of iterations or a stopping criterion is reached 
+-Key parameters 
+    Learning rate(learning_rate)
+        Lower values improve model performance by reducing overfitting but requir more iterations
+        Typical range:0.01 to 0.3
+    Number of Estimators(n_estimators)  
+        Represents the number of trees added to the ensemble
+        Larger values can improve performance but risk overfitting
+    Tree depth(Max_depth)
+        Limits the complexity of individual trees
+        Shallow trees generalize better but might underfit.
+

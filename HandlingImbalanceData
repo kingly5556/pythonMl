@@ -1,0 +1,32 @@
+What is imbalanced data
+-refers to datasets where one class significantly outnumbers the other(s)
+-challenges with imbalanced Data
+    Bias Toward Majority Class:
+        Machine learning models tend to prioritize the majority class due to its frequency
+    Misleading Evaluation metrics
+        Metrics like accuracy can be misleading,as they do not account for class imbalance
+    Insufficient samples for the minority class can lead to undefitting
+Applications with imbalanced data
+    fraud detection,medical diagnosis,and anomaly detection
+
+Texhniques To handle
+-Resampling Techniques
+    Oversampling
+        Increase the number of minrity class samples by duplicating or synthesizing new samples
+        Exam:SMOTE(Synthetic minority Over-sampling Technique),which generates synthetic examples
+    Undersampling
+        Reduce the numver of majority class samples to balance the dataset
+        Risk:Loss of valuable information from majority class
+-Algorithm solution
+    Class Weights
+        Assign higher weights to the minority class during model training
+        Many algorithms(Logistic regression,random forest)have built-in support class weights
+    Anomaly detection models
+        Treat the minority class as anomalies,focusing the model on detectig them.
+-Evaluation Metric for Imbalanced data
+    F1-score
+        Harmonic mean of precision and recall,focusing on both false positives and false negative
+    ROC-AUC
+        Measures the ability to distinguish between classes across various treshold values
+    Precision-Recall curve
+        Focuses on performance for the positive class
