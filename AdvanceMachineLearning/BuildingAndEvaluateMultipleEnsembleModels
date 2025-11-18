@@ -1,0 +1,27 @@
+Why compare Ensemble Models?
+    Excel in different scenarios.
+    Helps identify the most effective model for a specific dataset or problem.
+Ensemble Methods to consider:
+    Bagging(e.g.,Random Forest)
+        Reduces variance by averageing predictions from multiple independent Models.
+        Works well with high-variance models like decision trees.
+    Boosting(e.g.,Gradient Boosting,XGBoost,LightGBM)
+        Reduces bias by sequentially correcting errors from previous models.
+        Effective for complex patterns and imbalanced datasets.
+Different between Bagging and Boosting
+    Bagging 
+        Builds models independently using random subsets of data
+        Robust against overfitting with strong base learners
+    Boosting 
+        sequentially Builds models,focusing on hard-to-predict samples
+        Requires Careful tuning to prevent overfitting.
+Model performance on balanced vs. imbalanced data
+    Challenges with imbalanced Data
+        Models may prioritize the majority class,leading to poor performance on the minority class
+    Evaluation Metrics
+        Accuracy 
+            May not reflect true performance for imbalanced datasets
+        F1-Score
+            Balances precision and recall,focusing on the minority class
+        ROC-AUC 
+            Evaluates the model's ability to distinguish between classes across thresholds
