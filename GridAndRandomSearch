@@ -1,0 +1,20 @@
+What is grid search?
+    Method of hyperparameter tuning that systematically evaluates all posible combinations of hyperparameter values within a specified grid.
+    How it works:
+        Define a range of values for each hyperparameter.
+        Train and evaluates the model on each bombination of hyperparameter values.
+        Select the combination that yields the best performance.
+What is Random Search?
+    Altternative method where hyperparameter combinations are sampled randomly from the specified ranges.
+    How It Works.
+        Define ranges of distributions for each hyperparameter.
+        Randomly sample a specified number of combinations.
+        Train and evaluate the model for each sampled combination
+
+Practice Guidance on Choosing Search Ranges
+-Start with Broad Ranges
+    Use Random search to explore large parameter spaces and identify promising ranges
+-Refine with grid search
+    Narrow the search space based on Random Search results and perform exhaustive Grid Search for fine-tuning
+-Understand Model sensitivity
+    Somy hyperparameters(e.g.,Learning rate)require fine granularity,while other(e.g.,number of trees)can have coarser steps.
