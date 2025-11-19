@@ -1,0 +1,30 @@
+What is GridSearchCV
+-Exhaustive search over a specified parameter GridSearchCV
+-Trains and evaluates a model for every combination of hyperparameters in the fris using cross-validation
+What is RandomizedSearchCV?
+-Selects a fixed Numver of random combinations from a parameter distribution
+-Faster than GridSearchCV for large hyperparameter spaces while still providing good results
+
+Key Features
+    Automates Hyperparameter Tuning
+        Combines model training,evaluation,and hyperparameter search into a single step
+    Cross-Validation Integration
+        Ensures robust performance metrics by using cross-validation
+    Result Interpretation
+        Provides the best hyperparameter combination and associated metrics
+
+Integrating Cross-validation with Hyperparameter Tuning
+-Cross-Validation
+    Ensures that the hyperparameters selected generalize well to unseen data
+-Benefits
+    Reduces overfitting to the training dataset
+    Provides robust estimates of model performance
+
+Interpreting Results and Selecting the Best model
+-Best Parameters
+    Access the optimal hyperparameter combination using .best_params_
+-Best Estimator
+    Retrieve the model trained with the best hyperparameters using .best_estimator_
+-Performance Metrics
+    Use .best_score to evaluate the performance of the best hyperparameters.
+    
